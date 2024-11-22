@@ -2,11 +2,11 @@ import NavBar from './NavBar.jsx';
 
 const styles = {
     header: {
-        position: 'fixed',
+        position: 'relative',
         top: 0,
         left: 0,
         width: '100%',
-        padding: '5px',
+        padding: '0.2rem',
         fontFamily: 'Roboto',
         fontSize: '1.4rem'
     },
