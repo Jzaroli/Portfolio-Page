@@ -3,7 +3,8 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
 const styles = {
-  marginTop: '2vh', 
+  marginTop: '2vh',
+  paddingBottom: '4rem'
 }
 
 function App() {
