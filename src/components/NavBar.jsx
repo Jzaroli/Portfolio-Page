@@ -10,7 +10,8 @@ const styles = {
     logo: {
          height: '9vh',
          textAlign: 'center',
-         margin: '0.3rem'
+         margin: '0.3rem',
+         marginLeft: '0.5rem'
         }
 }
 
@@ -19,7 +20,7 @@ function NavBar() {
 
     return (
         <nav className="navbar navbar-expand-sm navbar-light">
-            <img style={styles.logo} src={logo} alt="GitHub Logo"></img>
+            <img style={styles.logo} src={logo} alt="JZ logo"></img>
             <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between">
                 <li style={styles.nav} className="nav-item">
                     <Link

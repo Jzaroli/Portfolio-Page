@@ -2,14 +2,14 @@ import NavBar from './NavBar.jsx';
 
 const styles = {
     header: {
-        position: 'relative',
+        position: 'sticky',
         top: 0,
         left: 0,
         width: '100%',
-        padding: '0.2rem',
+        padding: '0.3vw',
         fontFamily: 'Roboto',
-        fontSize: '1.4rem'
-    },
+        fontSize: '1.4rem',
+    }
 }
 
 function Header () {

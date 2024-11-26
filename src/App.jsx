@@ -3,18 +3,29 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
 const styles = {
-  marginTop: '2vh',
-  paddingBottom: '4rem'
+  body: {
+    margin: 0,
+    padding: 0,
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  main: {
+    flex: 1,
+    marginTop: '1vh',
+  }
 }
 
 function App() {
   return (
     <>
-      <Header />
-      <main style={styles} className="mx-3">
-        <Outlet />
-      </main>
-      <Footer />
+      <div style={styles.body}>
+        <Header />
+          <main style={styles.main} className="mx-3">
+            <Outlet />
+          </main>
+        <Footer />
+      </div>
     </>
   );
 }

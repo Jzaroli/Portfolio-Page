@@ -3,14 +3,14 @@ import linkedin from '../assets/images/In-White-72.png';
 
 const styles = {
     footer: {
-        position: 'fixed',
+        position: 'static',
         bottom: 0,
         left: 0,
         width: '100%',
         height: '4rem',
-        padding: '0.4rem',
+        padding: '0.7vw',
+        marginTop: '1vw',
         textAlign: 'center',
-        marginTop: '1vw'
     },
     logo: {
         height: '8vh',
@@ -21,10 +21,10 @@ const styles = {
 function Footer () {
     return (
         <footer style={styles.footer} className="bg-primary bg-opacity-75 bg-gradient">
-            <a  href="https://www.linkedin.com/in/johannzaroli/">
+            <a  href="https://www.linkedin.com/in/johannzaroli/" target="_blank" rel="noopener noreferrer">
                     <img style={styles.logo} src={linkedin} alt="LinkedIn Logo"></img>
             </a>
-            <a href="https://github.com/Jzaroli">
+            <a href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">
                     <img style={styles.logo} src={github} alt="GitHub Logo"></img>
             </a>
         </footer>
