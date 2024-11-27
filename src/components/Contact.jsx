@@ -1,4 +1,5 @@
 import logo from '../assets/images/jz-logo.png';
+import { useState } from 'react';
 
 const styles = {
     wrapper: {
@@ -19,7 +20,7 @@ const styles = {
         overflowX: 'hidden',  
         padding: '1vw',
       },
-    headshot: {
+    logo: {
         borderRadius: '50%', 
         height: '15vw',
         width: '15vw',
@@ -29,7 +30,6 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        width: '100%',
         fontFamily: 'Roboto',
         boxSizing: 'border-box',
         textAlign: 'left',
@@ -37,26 +37,103 @@ const styles = {
     },
     h2: {
         overflow: 'auto',
-        margin: '1vw',
     },
-    paragraph: {
-        fontSize: '1rem',
+    formDiv: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    },
+    formInputs: {
+        marginTop: '1vw',
+        fontFamily: 'Roboto',
+    },
+    textArea: {
+        marginTop: '1vw',
+        fontFamily: 'Roboto',
+        width: '40vw'
+    },
+    button: {
+        fontSize: '1.6vw',
+        textAlign: 'center',
         margin: '1vw',
-        }
+        color: 'white',
+        textDecoration: 'none',
+        fontFamily: 'Roboto',
+    }
+    
 }
 
-function Contact() {
+function ContactForm() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form Data Submited', formData);
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        });
+    };
+    
+    
     return (
         <>
             <div style={styles.wrapper}>
                 <div style={styles.circle} className='bg-danger bg-opacity-25' >
                     <div>
-                        <img style={styles.headshot} src={logo} alt="logo"></img>
+                        <img style={styles.logo} src={logo} alt="logo"></img>
                     </div>
                     <div style={styles.div}>
-                        <h2 style={styles.h2}>Who am I?</h2> 
-                        <p style={styles.paragraph}>As a former molecular biologist, SaaS account executive and co-founder, I bring a unique set of skills and experiences to web development. This blend of technical and business skills helps me connect with customer UI/UX and business process needs while balancing the priorieties of your business. My experience working with both small, scrappy teams and large teams supporting Fortune 50 companies, has taught me the importance of clear communication, the spirit of collaboration and the importance of mentorship. Please have a look at my portfolio and resume. And, let me know if you have any questions! Thanks for stopping by!
-                        </p>
+                        <h2 style={styles.h2}>Let's connect:</h2> 
+                        <form onSubmit={handleFormSubmit}>
+                            <div style={styles.formDiv} className="form-group">
+                                <input
+                                    style={styles.formInputs}
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleInputChange}
+                                    placeholder="Name"
+                                    className="form-control"
+                                />
+                                <input
+                                    style={styles.formInputs}
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                    placeholder="Email"
+                                    className="form-control"
+                                />
+                                <textarea
+                                    style={styles.textArea}
+                                    id="message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleInputChange}
+                                    placeholder="Type your message here"
+                                    className="form-control"
+                                    rows="3"
+                                />
+                                <button style={styles.button} className="btn btn-default btn-work btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>  
@@ -64,4 +141,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default ContactForm;

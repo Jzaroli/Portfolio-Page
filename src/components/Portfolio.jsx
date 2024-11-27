@@ -42,11 +42,12 @@ const styles = {
         flexDirection: 'row',
     },
     linkFormat: {
-        fontSize: '2vw',
+        fontSize: '1.5vw',
         textAlign: 'center',
         margin: '1vw',
         color: 'white',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        fontFamily: 'Roboto',
     }
 }
     
@@ -64,7 +65,7 @@ const styles = {
                     <img style={styles.img} src={weather} alt="Weather App Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Weather-API_App" target="_blank" rel="noopener noreferrer">Github</a> 
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Link</a>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://weather-app-tx11.onrender.com/" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                 </div>
                 <div style={styles.box} className='bg-danger bg-opacity-25'>
