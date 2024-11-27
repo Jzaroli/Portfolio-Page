@@ -64,7 +64,7 @@ function Resume() {
     return (
         <>
             <div style={styles.wrapper}>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <p style={styles.paragraph}> 
                         <h2 style= {styles.h2}>Skills</h2> 
                             <b>Back End Development</b> | Express 𑇐 Node.js 𑇐 Python 𑇐 PostgreSQL <br></br>

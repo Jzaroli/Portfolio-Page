@@ -20,7 +20,7 @@ const styles = {
 
 function Footer () {
     return (
-        <footer style={styles.footer} className="bg-primary bg-opacity-75 bg-gradient">
+        <footer style={styles.footer} className="bg-primary bg-gradient">
             <a  href="https://www.linkedin.com/in/johannzaroli/" target="_blank" rel="noopener noreferrer">
                     <img style={styles.logo} src={linkedin} alt="LinkedIn Logo"></img>
             </a>

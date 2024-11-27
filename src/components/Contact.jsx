@@ -1,5 +1,7 @@
 import logo from '../assets/images/jz-logo.png';
 import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const styles = {
     wrapper: {
@@ -10,7 +12,6 @@ const styles = {
       },
     circle: {
         display: 'flex',
-        flexDirection: 'flex-start',
         alignItems: 'flex-start',
         flexDirection: 'row',
         width: '75vw',
@@ -35,8 +36,26 @@ const styles = {
         textAlign: 'left',
         overflow: 'visible',
     },
-    h2: {
-        overflow: 'auto',
+    circle2: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row',
+        width: '75vw',
+        height: 'auto', 
+        borderRadius: '3%', 
+        overflowY: 'auto',
+        overflowX: 'hidden',  
+        padding: '1vw',
+      },
+    div2: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'center',
+        fontFamily: 'Roboto',
+        boxSizing: 'border-box',
+        overflow: 'visible',
+        position: 'relative'
     },
     formDiv: {
         display: 'flex',
@@ -64,50 +83,38 @@ const styles = {
 }
 
 function ContactForm() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-
-
-    const handleInputChange = (e) => {
-        const {name, value} = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-    };
-
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form Data Submited', formData);
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-        });
-    };
     
-    
+    const [state, handleSubmit] = useForm("xgvenykr"); //this
+    if (state.succeeded) {
+        return  <>
+        <div style={styles.wrapper}>
+            <div style={styles.circle2} className='bg-primary bg-opacity-25' >
+                <div>
+                    <img style={styles.logo} src={logo} alt="logo"></img>
+                </div>
+                <div style={styles.div2}>
+                    <h2 style={styles.h2}>Thanks for reaching out! I'll be in touch soon.</h2> 
+                </div>
+            </div>
+        </div>  
+    </>
+    }
     return (
         <>
             <div style={styles.wrapper}>
-                <div style={styles.circle} className='bg-danger bg-opacity-25' >
+                <div style={styles.circle} className='bg-primary bg-opacity-25' >
                     <div>
                         <img style={styles.logo} src={logo} alt="logo"></img>
                     </div>
                     <div style={styles.div}>
                         <h2 style={styles.h2}>Let's connect:</h2> 
-                        <form onSubmit={handleFormSubmit}>
+                        <form onSubmit={handleSubmit}>
                             <div style={styles.formDiv} className="form-group">
                                 <input
                                     style={styles.formInputs}
                                     type="text"
                                     id="name"
                                     name="name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
                                     placeholder="Name"
                                     className="form-control"
                                 />
@@ -116,8 +123,6 @@ function ContactForm() {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
                                     placeholder="Email"
                                     className="form-control"
                                 />
@@ -125,9 +130,7 @@ function ContactForm() {
                                     style={styles.textArea}
                                     id="message"
                                     name="message"
-                                    value={formData.message}
-                                    onChange={handleInputChange}
-                                    placeholder="Type your message here"
+                                    placeholder="Type your message here.."
                                     className="form-control"
                                     rows="3"
                                 />

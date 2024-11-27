@@ -54,35 +54,35 @@ const styles = {
     return (
         <>
             <div style={styles.wrapper}>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={employee} alt="Employee Tracker Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Employee-Tracker_App" target="_blank" rel="noopener noreferrer">Github</a>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={weather} alt="Weather App Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Weather-API_App" target="_blank" rel="noopener noreferrer">Github</a> 
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://weather-app-tx11.onrender.com/" target="_blank" rel="noopener noreferrer">Link</a>
                     </div>
                 </div>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={markdown} alt="Markdown Generator Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/MarkdownGenerator_App" target="_blank" rel="noopener noreferrer">Github</a> 
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={vehicle} alt="Vehicle Builder Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Vehicle-Builder_OOP_App" target="_blank" rel="noopener noreferrer">Github</a> 
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
-                <div style={styles.box} className='bg-danger bg-opacity-25'>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={mole} alt="Wackamole Game Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Wackamole-2.0_JS-Game" target="_blank" rel="noopener noreferrer">Github</a> 
