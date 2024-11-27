@@ -14,7 +14,7 @@ const styles = {
 
 function Header () {
     return (
-        <header style={styles.header} className="bg-primary bg-opacity-75 bg-gradient">
+        <header style={styles.header} className="bg-primary bg-gradient">
             <NavBar />
         </header>
     )
