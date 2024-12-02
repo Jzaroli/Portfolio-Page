@@ -3,6 +3,7 @@ import vehicle from '../assets/images/vehicleBuilder.png';
 import markdown from '../assets/images/markdownGen.png';
 import employee from '../assets/images/employeeTracker.png';
 import mole from '../assets/images/mobileMole.png';
+import portfolio from '../assets/images/portfolio.png';
 
 
 
@@ -21,7 +22,7 @@ const styles = {
         justifyContent: 'flex-start',
         alignItems: 'center',
         width: '44vw',
-        height: '28vw',
+        height: '29vw',
         borderRadius: '2%', 
         margin: '1.5vw',
         padding: '1vw',
@@ -58,7 +59,7 @@ const styles = {
                     <img style={styles.img} src={employee} alt="Employee Tracker Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Employee-Tracker_App" target="_blank" rel="noopener noreferrer">Github</a>
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://drive.google.com/file/d/15JP-_EeoE1u1i_LH4n1hetNsgiJW7F-A/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
@@ -69,23 +70,29 @@ const styles = {
                     </div>
                 </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
+                    <img style={styles.img} src={mole} alt="Wackamole Game Logo"></img>
+                    <div style={styles.divFormat}>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Wackamole-2.0_JS-Game" target="_blank" rel="noopener noreferrer">Github</a> 
+                    </div>
+                </div>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={markdown} alt="Markdown Generator Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/MarkdownGenerator_App" target="_blank" rel="noopener noreferrer">Github</a> 
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://drive.google.com/file/d/1QwiuBvydKYRJa4Q51AqXuWEwYlpEEjr3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={vehicle} alt="Vehicle Builder Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Vehicle-Builder_OOP_App" target="_blank" rel="noopener noreferrer">Github</a> 
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://drive.google.com/file/d/1dmeb1nkwNFHpTZ6KcFl-7RF6idYyCoEi/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Demo</a>
                     </div>
                 </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
-                    <img style={styles.img} src={mole} alt="Wackamole Game Logo"></img>
+                    <img style={styles.img} src={portfolio} alt="Portfolio Logo"></img>
                     <div style={styles.divFormat}>
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Wackamole-2.0_JS-Game" target="_blank" rel="noopener noreferrer">Github</a> 
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Portfolio-Page_React" target="_blank" rel="noopener noreferrer">Github</a> 
                     </div>
                 </div>
             </div>

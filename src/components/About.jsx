@@ -10,9 +10,9 @@ const styles = {
         textAlign: 'center',
       },
     box: {
-        width: '50vw',
+        width: '45vw',
         height: 'auto', 
-        padding: '0.3vw',
+        padding: '0.6vw',
         borderRadius: '3%',
         fontFamily: 'Roboto',
         marginBottom: '1.5vw'
@@ -28,6 +28,7 @@ const styles = {
         overflowY: 'auto',
         overflowX: 'hidden',
         padding: '1vw',
+        marginBottom: '1vw'
       },
     headshot: {
         borderRadius: '50%', 
@@ -61,7 +62,7 @@ function About() {
         <>
             <div style={styles.wrapper}>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
-                    <h1>Johann Zaroli | Full Stack Developer</h1>
+                    <h1> <span className='fw-bold'>Johann Zaroli</span> <br></br> Full Stack Developer</h1>
                 </div>
                 <div style={styles.box2} className='bg-primary bg-opacity-25' >
                     <div>

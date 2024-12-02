@@ -2,11 +2,19 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/jz-logo-simple.png';
 import '../assets/css/NavBar.css'
 
+
 const styles = {
     nav: {
+        alignItems: 'flex-start',    
         margin: '0.3rem',
         textAlign: 'center',
-        fontSize: '5.2vh'
+        fontSize: '5vh',
+        maxHeight: '8vw'
+    },
+    ul: {
+        display: 'flex',
+        flexWrap: 'wrap',  
+        flexDirection: 'row',
     },
     logo: {
          height: '9vh',
@@ -61,16 +69,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
-{/* <li style={styles.nav} className="nav-item">
-                    <a className="nav-link" href="#aboutme">About Me</a>
-                </li>
-                <li style={styles.nav} className="nav-item">
-                    <a className="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li style={styles.nav} className="nav-item">
-                    <a className="nav-link" href="#contact">Contact</a>
-                </li>
-                <li style={styles.nav} className="nav-item">
-                    <a className="nav-link" href="#resume">Resume</a>
-                </li> */}
