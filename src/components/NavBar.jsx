@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/jz-logo-simple.png';
+import '../assets/css/NavBar.css'
 
 const styles = {
     nav: {
@@ -21,8 +22,8 @@ function NavBar() {
     return (
         <nav className="navbar navbar-expand-sm navbar-light">
             <img style={styles.logo} src={logo} alt="JZ logo"></img>
-            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between ">
-                <li style={styles.nav} className="nav-item ">
+            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between">
+                <li style={styles.nav} className="nav-item">
                     <Link
                         to='/'
                         className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
