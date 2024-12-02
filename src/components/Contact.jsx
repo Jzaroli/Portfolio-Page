@@ -1,7 +1,6 @@
 import logo from '../assets/images/jz-logo.png';
-import { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-
+import { useForm } from '@formspree/react';
+import React, { useState } from 'react';
 
 const styles = {
     wrapper: {
@@ -83,8 +82,32 @@ const styles = {
 }
 
 function ContactForm() {
+    const [formValues, setFormValues] = useState({ name: '', email: '', message: '' }); 
+    const [formErrors, setFormErrors] = useState({ name: '', email: '', message: '' }); 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     
-    const [state, handleSubmit] = useForm("xgvenykr"); //this
+    const [state, handleSubmit] = useForm("xgvenykr"); 
+
+    const handleInputChange = (e) => { 
+        const { name, value } = e.target;
+        setFormValues((prev) => ({ ...prev, [name]: value }));
+        if (value && formErrors[name]) {
+            setFormErrors((prev) => ({ ...prev, [name]: '' }));
+          }
+        if (name === 'email' && value && !emailRegex.test(value)) {
+        setFormErrors((prev) => ({ ...prev, email: 'Invalid email address.' }));
+        }
+    };
+
+    const handleInputBlur = (e) => { 
+        const { name, value } = e.target;
+        const fieldName = name.charAt(0).toUpperCase() + name.slice(1);
+
+        if (!value) {
+          setFormErrors((prev) => ({ ...prev, [name]: `${fieldName} is required.` }));
+        }
+      };
+
     if (state.succeeded) {
         return  <>
         <div style={styles.wrapper}>
@@ -117,7 +140,12 @@ function ContactForm() {
                                     name="name"
                                     placeholder="Name"
                                     className="form-control"
+                                    value={formValues.name} 
+                                    onChange={handleInputChange} 
+                                    onBlur={handleInputBlur} 
                                 />
+                                    {formErrors.name && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.name}</p>}
+
                                 <input
                                     style={styles.formInputs}
                                     type="email"
@@ -125,7 +153,11 @@ function ContactForm() {
                                     name="email"
                                     placeholder="Email"
                                     className="form-control"
+                                    value={formValues.email} 
+                                    onChange={handleInputChange} 
+                                    onBlur={handleInputBlur} 
                                 />
+                                    {formErrors.email && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.email}</p>}
                                 <textarea
                                     style={styles.textArea}
                                     id="message"
@@ -133,7 +165,12 @@ function ContactForm() {
                                     placeholder="Type your message here.."
                                     className="form-control"
                                     rows="3"
+                                    value={formValues.message} 
+                                    onChange={handleInputChange} 
+                                    onBlur={handleInputBlur} 
                                 />
+                                {formErrors.message && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.message}</p>}
+
                                 <button style={styles.button} className="btn btn-default btn-work btn-primary" type="submit">Submit</button>
                             </div>
                         </form>

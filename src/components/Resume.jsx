@@ -16,18 +16,6 @@ const styles = {
         overflow: 'auto',
         padding: '1vw'
       },
-    box2: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '47vw',
-        height: 'auto', 
-        borderRadius: '2%', 
-        margin: '1.5vw',
-        overflow: 'auto',
-        padding: '1vw'
-      },
     h2: {
         textDecoration: 'underline',
         fontWeight: '500'
