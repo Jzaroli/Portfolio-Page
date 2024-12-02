@@ -39,7 +39,7 @@ const styles = {
         display: 'inline-flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: '1vw',
+        fontSize: '1.6vw',
         textAlign: 'center',
         color: 'white',
         textDecoration: 'none',
@@ -60,7 +60,7 @@ function Resume() {
                             <b>Miscellaneous Technical</b> | Typescript 𑇐 Prompt Engineering <br></br>
                             <b>Mathematics</b> | Statistics 𑇐 Calculus <br></br>
                             <b>Business</b> | Go-To-Market Strategy 𑇐 Sales 𑇐 Financial Markets 𑇐 Business Processes<br></br>
-                            <b>Soft Skills</b> | Clear & well-spoken communicator 𑇐 Team-player 𑇐 Mentorship<br></br>
+                            <b>Soft Skills</b> | Clear & Well-Spoken Communicator 𑇐 Team-player 𑇐 Mentorship<br></br>
                             <br></br>
                         <h2 style= {styles.h2}>Education</h2> 
                             <b>Certificate: Full Stack Coding Bootcamp</b> | Denver University <br></br>
@@ -78,7 +78,7 @@ function Resume() {
                             <br></br>
                         <div style={styles.resume}>
                             <h2 style= {styles.h2}>Experience: </h2>
-                            <a style={styles.button} className="btn btn-primary" href="https://drive.google.com/file/d/1RuFRGgmXMxWzibC28boja_bth8-dGMVZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume PDF</a> 
+                            <a style={styles.button} className="btn btn-primary" href="https://drive.google.com/file/d/1RuFRGgmXMxWzibC28boja_bth8-dGMVZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a> 
                         </div>
                     </p>
                 </div>

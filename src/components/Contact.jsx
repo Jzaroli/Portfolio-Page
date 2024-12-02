@@ -68,10 +68,10 @@ const styles = {
     textArea: {
         marginTop: '1vw',
         fontFamily: 'Roboto',
-        width: '40vw'
+        width: '54vw'
     },
     button: {
-        fontSize: '1.6vw',
+        fontSize: '1.8vw',
         textAlign: 'center',
         margin: '1vw',
         color: 'white',

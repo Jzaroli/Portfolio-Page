@@ -8,7 +8,6 @@ const styles = {
         width: '100%',
         padding: '0.3vw',
         fontFamily: 'Roboto',
-        fontSize: '1.4rem',
     }
 }
 
