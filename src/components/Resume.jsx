@@ -61,6 +61,8 @@ function Resume() {
                             <b>Mathematics</b> | Statistics 𑇐 Calculus <br></br>
                             <b>Business</b> | Go-To-Market Strategy 𑇐 Sales 𑇐 Financial Markets 𑇐 Business Processes<br></br>
                             <b>Soft Skills</b> | Clear & Well-Spoken Communicator 𑇐 Team-player 𑇐 Mentorship<br></br>
+                            <b>Languages</b> | French 𑇐 English<br></br>
+
                             <br></br>
                         <h2 style= {styles.h2}>Education</h2> 
                             <b>Certificate: Full Stack Coding Bootcamp</b> | Denver University <br></br>
@@ -68,7 +70,7 @@ function Resume() {
                             <div style={styles.a}>
                                 <a classname="text-primary" href="https://scholarworks.sjsu.edu/etd_theses/4324/" target="_blank" rel="noopener noreferrer"><b>Master's Thesis</b></a><br></br>
                             </div>
-                            <b>Bachelor's in Molecular Biology 𑇐 Minor in Chemistry</b> | San José State University 𑇐 3.3 GPA 𑇐 2011<br></br>
+                            <b>Bachelors in Molecular Biology 𑇐 Minor in Chemistry</b> | San José State University 𑇐 3.3 GPA 𑇐 2011<br></br>
                             <br></br>
                         <h2 style= {styles.h2}>Awards</h2> 
                             <b>Basware, Inc.</b> | Team MVP Q4 2018<br></br>

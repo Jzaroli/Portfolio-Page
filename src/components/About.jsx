@@ -70,7 +70,7 @@ function About() {
                     </div>
                     <div style={styles.div}> 
                         <h2 style={styles.h2}>Who am I?</h2>
-                        <p style={styles.paragraph}> As a former molecular biologist, SaaS account executive and co-founder, I bring a unique set of skills and experiences to full stack development. This blend of technical and business skills helps me connect with customer UI/UX considerations, business process needs and system design considerations. My experience working with both small, scrappy teams and large teams supporting Fortune 50 companies, has taught me the importance of clear communication, the spirit of collaboration and the importance of mentorship. Please have a look at my portfolio and resume. And, let me know in the contact section if you'd like to work together! Thank you for stopping by!
+                        <p style={styles.paragraph}> Former molecular biologist, SaaS account executive and co-founder, bringing a unique set of skills and experiences to full stack development. This blend of technical and business skills connects me with customer UI/UX considerations, business process needs and system design considerations. Experiences working with both small, scrappy teams and large teams supporting Fortune 50 companies, taught me the importance of clear communication, the spirit of collaboration and the joy of mentorship. Please have a look at my portfolio and resume. And, let me know in the contact section if you'd like to work together! Thank you for stopping by!
                             </p>
                     </div>
                 </div>
