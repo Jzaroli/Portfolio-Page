@@ -4,10 +4,12 @@ import markdown from '../assets/images/markdownGen.png';
 import employee from '../assets/images/employeeTracker.png';
 import mole from '../assets/images/mobileMole.png';
 import portfolio from '../assets/images/portfolio.png';
-
-
+import React, { useState } from "react";
 
 function Portfolio() {
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => setIsHovered(true);
+    const handleMouseLeave = () => setIsHovered(false);
 
 const styles = {
     wrapper: {
@@ -49,9 +51,33 @@ const styles = {
         color: 'white',
         textDecoration: 'none',
         fontFamily: 'Roboto',
-    }
+    },
+    tooltipContainer: {
+        position: "relative", 
+        display: "inline-block",
+        textAlign: "center",
+      },
+    tooltip: {
+        position: "absolute",
+        bottom: "90%",
+        left: "50%",
+        transform: "translateX(-50%)",
+        fontFamily: 'Roboto',
+        backgroundColor: "black",
+        color: "white",
+        padding: "5px 10px",
+        borderRadius: "5px",
+        whiteSpace: "nowrap",
+        fontSize: "1vw",
+        boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+        zIndex: 10,
+        visibility: isHovered ? "visible" : "hidden",
+        opacity: isHovered ? 1 : 0, 
+        transition: "opacity 0.3s ease", 
+      },
 }
-    
+
+
     return (
         <>
             <div style={styles.wrapper}>
@@ -66,7 +92,10 @@ const styles = {
                     <img style={styles.img} src={weather} alt="Weather App Logo"></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Weather-API_App" target="_blank" rel="noopener noreferrer">Github</a> 
-                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://weather-app-tx11.onrender.com/" target="_blank" rel="noopener noreferrer">Link</a>
+                        <div style={styles.tooltipContainer}>
+                            <div style={styles.tooltip}>Render needs 60s to boot up!</div>
+                            <a style={styles.linkFormat} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="btn btn-default btn-work btn-primary" href="https://weather-app-tx11.onrender.com/" target="_blank" rel="noopener noreferrer">Link</a>
+                        </div>
                     </div>
                 </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
