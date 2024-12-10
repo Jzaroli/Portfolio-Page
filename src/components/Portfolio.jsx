@@ -1,4 +1,5 @@
 import weather from '../assets/images/weatherApp.png';
+import candidate from '../assets/images/candidate.png';
 import vehicle from '../assets/images/vehicleBuilder.png';
 import markdown from '../assets/images/markdownGen.png';
 import employee from '../assets/images/employeeTracker.png';
@@ -81,6 +82,16 @@ const styles = {
     return (
         <>
             <div style={styles.wrapper}>
+                <div style={styles.box} className='bg-primary bg-opacity-25'>
+                    <img style={styles.img} src={candidate} alt="Candidate App Logo"></img>
+                    <div style={styles.divFormat}>
+                        <a style={styles.linkFormat} className="btn btn-default btn-work btn-primary" href="https://github.com/Jzaroli/Candidate-Search_App" target="_blank" rel="noopener noreferrer">Github</a> 
+                        <div style={styles.tooltipContainer}>
+                            <div style={styles.tooltip}>Render needs 60s to boot up!</div>
+                            <a style={styles.linkFormat} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="btn btn-default btn-work btn-primary" href="https://candidate-search-app-ryre.onrender.com/" target="_blank" rel="noopener noreferrer">Link</a>
+                        </div>
+                    </div>
+                </div>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <img style={styles.img} src={employee} alt="Employee Tracker Logo"></img>
                     <div style={styles.divFormat}>
