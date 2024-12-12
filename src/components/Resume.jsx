@@ -59,7 +59,7 @@ function Resume() {
                             <b>Front End Development</b> | ReactJS 𑇐 JavaScript 𑇐 BootStrap 𑇐 HTML 𑇐 CSS <br></br>
                             <b>Miscellaneous Technical</b> | Typescript 𑇐 Prompt Engineering <br></br>
                             <b>Mathematics</b> | Statistics 𑇐 Calculus <br></br>
-                            <b>Business</b> | Go-To-Market Strategy 𑇐 Sales 𑇐 Financial Markets 𑇐 Business Processes<br></br>
+                            <b>Business</b> | Go-To-Market Strategy 𑇐 Sales 𑇐 Capital Markets 𑇐 Business Processes<br></br>
                             <b>Soft Skills</b> | Clear & Well-Spoken Communicator 𑇐 Team-player 𑇐 Mentorship<br></br>
                             <b>Languages</b> | French 𑇐 English<br></br>
 
