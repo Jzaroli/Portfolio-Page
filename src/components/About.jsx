@@ -66,7 +66,7 @@ function About() {
                 </div>
                 <div style={styles.box2} className='bg-primary bg-opacity-25' >
                     <div>
-                        <img style={styles.headshot} src={headshot} alt="headshot"></img>
+                        <img style={styles.headshot} src={headshot} alt='headshot'></img>
                     </div>
                     <div style={styles.div}> 
                         <h2 style={styles.h2}>Who am I?</h2>

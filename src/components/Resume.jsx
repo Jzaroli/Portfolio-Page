@@ -68,7 +68,7 @@ function Resume() {
                             <b>Certificate: Full Stack Coding Bootcamp</b> | Denver University <br></br>
                             <b>Master's in Molecular Biology</b> | San José State University 𑇐 3.6 GPA 𑇐 2013<br></br>
                             <div style={styles.a}>
-                                <a classname="text-primary" href="https://scholarworks.sjsu.edu/etd_theses/4324/" target="_blank" rel="noopener noreferrer"><b>Master's Thesis</b></a><br></br>
+                                <a classname='text-primary' href='https://scholarworks.sjsu.edu/etd_theses/4324/' target='_blank' rel='noopener noreferrer'><b>Master's Thesis</b></a><br></br>
                             </div>
                             <b>Bachelors in Molecular Biology 𑇐 Minor in Chemistry</b> | San José State University 𑇐 3.3 GPA 𑇐 2011<br></br>
                             <br></br>
@@ -80,7 +80,7 @@ function Resume() {
                             <br></br>
                         <div style={styles.resume}>
                             <h2 style= {styles.h2}>Experience: </h2>
-                            <a style={styles.button} className="btn btn-primary" href="https://drive.google.com/file/d/1CMeL8Qo6deZxxPlmHkopNikLwJ9KS2Hn/view" target="_blank" rel="noopener noreferrer">Resume</a> 
+                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1CMeL8Qo6deZxxPlmHkopNikLwJ9KS2Hn/view' target='_blank' rel='noopener noreferrer'>Resume</a> 
                         </div>
                     </p>
                 </div>

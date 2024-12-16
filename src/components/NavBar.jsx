@@ -28,10 +28,10 @@ function NavBar() {
     const currentPage = useLocation().pathname;
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-light">
-            <img style={styles.logo} src={logo} alt="JZ logo"></img>
-            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between">
-                <li style={styles.nav} className="nav-item">
+        <nav className='navbar navbar-expand-sm navbar-light'>
+            <img style={styles.logo} src={logo} alt='JZ logo'></img>
+            <ul className='navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between'>
+                <li style={styles.nav} className='nav-item'>
                     <Link
                         to='/'
                         className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
@@ -39,7 +39,7 @@ function NavBar() {
                         About
                     </Link>
                 </li>
-                <li style={styles.nav} className="nav-item">
+                <li style={styles.nav} className='nav-item'>
                     <Link
                         to='/Portfolio'
                         className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
@@ -47,7 +47,7 @@ function NavBar() {
                         Portfolio
                     </Link>
                 </li>
-                <li style={styles.nav} className="nav-item">
+                <li style={styles.nav} className='nav-item'>
                     <Link
                         to='/Resume'
                         className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
@@ -55,7 +55,7 @@ function NavBar() {
                         Resume
                     </Link>
                 </li>
-                <li style={styles.nav} className="nav-item">
+                <li style={styles.nav} className='nav-item'>
                     <Link
                         to='/Contact'
                         className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
