@@ -86,7 +86,7 @@ function ContactForm() {
     const [formErrors, setFormErrors] = useState({ name: '', email: '', message: '' }); 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     
-    const [state, handleSubmit] = useForm("xgvenykr"); 
+    const [state, handleSubmit] = useForm('xgvenykr'); 
 
     const handleInputChange = (e) => { 
         const { name, value } = e.target;
@@ -113,7 +113,7 @@ function ContactForm() {
         <div style={styles.wrapper}>
             <div style={styles.circle2} className='bg-primary bg-opacity-25' >
                 <div>
-                    <img style={styles.logo} src={logo} alt="logo"></img>
+                    <img style={styles.logo} src={logo} alt='logo'></img>
                 </div>
                 <div style={styles.div2}>
                     <h2 style={styles.h2}>Thanks for reaching out! I'll be in touch soon.</h2> 
@@ -127,19 +127,19 @@ function ContactForm() {
             <div style={styles.wrapper}>
                 <div style={styles.circle} className='bg-primary bg-opacity-25' >
                     <div>
-                        <img style={styles.logo} src={logo} alt="logo"></img>
+                        <img style={styles.logo} src={logo} alt='logo'></img>
                     </div>
                     <div style={styles.div}>
                         <h2 style={styles.h2}>Let's connect:</h2> 
                         <form onSubmit={handleSubmit}>
-                            <div style={styles.formDiv} className="form-group">
+                            <div style={styles.formDiv} className='form-group'>
                                 <input
                                     style={styles.formInputs}
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Name"
-                                    className="form-control"
+                                    type='text'
+                                    id='name'
+                                    name='name'
+                                    placeholder='Name'
+                                    className='form-control'
                                     value={formValues.name} 
                                     onChange={handleInputChange} 
                                     onBlur={handleInputBlur} 
@@ -148,11 +148,11 @@ function ContactForm() {
 
                                 <input
                                     style={styles.formInputs}
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Email"
-                                    className="form-control"
+                                    type='email'
+                                    id='email'
+                                    name='email'
+                                    placeholder='Email'
+                                    className='form-control'
                                     value={formValues.email} 
                                     onChange={handleInputChange} 
                                     onBlur={handleInputBlur} 
@@ -160,18 +160,18 @@ function ContactForm() {
                                     {formErrors.email && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.email}</p>}
                                 <textarea
                                     style={styles.textArea}
-                                    id="message"
-                                    name="message"
-                                    placeholder="Type your message here.."
-                                    className="form-control"
-                                    rows="3"
+                                    id='message'
+                                    name='message'
+                                    placeholder='Type your message here..'
+                                    className='form-control'
+                                    rows='3'
                                     value={formValues.message} 
                                     onChange={handleInputChange} 
                                     onBlur={handleInputBlur} 
                                 />
                                 {formErrors.message && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.message}</p>}
 
-                                <button style={styles.button} className="btn btn-default btn-work btn-primary" type="submit">Submit</button>
+                                <button style={styles.button} className='btn btn-default btn-work btn-primary' type='submit'>Submit</button>
                             </div>
                         </form>
                     </div>

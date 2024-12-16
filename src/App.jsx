@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const styles = {
   body: {
@@ -23,7 +23,7 @@ function App() {
     <>
       <div style={styles.body}>
         <Header />
-          <main style={styles.main} className="mx-3">
+          <main style={styles.main} className='mx-3'>
             <Outlet />
           </main>
         <Footer />

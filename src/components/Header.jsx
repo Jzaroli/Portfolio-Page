@@ -8,12 +8,14 @@ const styles = {
         width: '100%',
         padding: '0.3vw',
         fontFamily: 'Roboto',
+        zIndex: 15,
+
     }
 }
 
 function Header () {
     return (
-        <header style={styles.header} className="bg-primary bg-gradient">
+        <header style={styles.header} className='bg-primary bg-gradient'>
             <NavBar />
         </header>
     )
