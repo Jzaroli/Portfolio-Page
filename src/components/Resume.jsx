@@ -14,13 +14,14 @@ const styles = {
         borderRadius: '2%', 
         margin: '1.5vw',
         overflow: 'auto',
-        padding: '1vw'
+        padding: '1vw',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       },
     h2: {
         textDecoration: 'underline',
         fontWeight: '500'
       },
-    paragraph: {
+    sections: {
         fontFamily: 'Roboto',
         fontSize: '1rem',
         margin: '2vw'
@@ -53,7 +54,7 @@ function Resume() {
         <>
             <div style={styles.wrapper}>
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
-                    <p style={styles.paragraph}> 
+                    <div style={styles.sections}> 
                         <h2 style= {styles.h2}>Skills</h2> 
                             <b>Back End Development</b> | Express 𑇐 Node.js 𑇐 Python 𑇐 PostgreSQL <br></br>
                             <b>Front End Development</b> | ReactJS 𑇐 JavaScript 𑇐 BootStrap 𑇐 HTML 𑇐 CSS <br></br>
@@ -62,13 +63,12 @@ function Resume() {
                             <b>Business</b> | Go-To-Market Strategy 𑇐 Sales 𑇐 Capital Markets 𑇐 Business Processes<br></br>
                             <b>Soft Skills</b> | Clear & Well-Spoken Communicator 𑇐 Team-player 𑇐 Mentorship<br></br>
                             <b>Languages</b> | French 𑇐 English<br></br>
-
                             <br></br>
                         <h2 style= {styles.h2}>Education</h2> 
                             <b>Certificate: Full Stack Coding Bootcamp</b> | Denver University <br></br>
                             <b>Master's in Molecular Biology</b> | San José State University 𑇐 3.6 GPA 𑇐 2013<br></br>
                             <div style={styles.a}>
-                                <a classname='text-primary' href='https://scholarworks.sjsu.edu/etd_theses/4324/' target='_blank' rel='noopener noreferrer'><b>Master's Thesis</b></a><br></br>
+                                <a className='text-primary' href='https://scholarworks.sjsu.edu/etd_theses/4324/' target='_blank' rel='noopener noreferrer'><b>Master's Thesis</b></a><br></br>
                             </div>
                             <b>Bachelors in Molecular Biology 𑇐 Minor in Chemistry</b> | San José State University 𑇐 3.3 GPA 𑇐 2011<br></br>
                             <br></br>
@@ -82,7 +82,7 @@ function Resume() {
                             <h2 style= {styles.h2}>Experience: </h2>
                             <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1CMeL8Qo6deZxxPlmHkopNikLwJ9KS2Hn/view' target='_blank' rel='noopener noreferrer'>Resume</a> 
                         </div>
-                    </p>
+                    </div>
                 </div>
             </div>
         </>

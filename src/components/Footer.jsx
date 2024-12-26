@@ -8,12 +8,12 @@ const styles = {
         left: 0,
         width: '100%',
         height: '4rem',
-        padding: '0.7vw',
-        marginTop: '1vw',
+        padding: '0.25rem',
+        marginTop: '1rem',
         textAlign: 'center',
     },
     logo: {
-        height: '8vh',
+        height: '3.5rem',
         marginLeft: '1rem'
     }
 }

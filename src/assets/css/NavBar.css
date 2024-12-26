@@ -1,5 +1,17 @@
+.hamburger{
+  display: none
+}
+
 @media (max-width: 575px) {
-    .navbar-nav  {
-      color: white;
+    .hamburger{
+      display: inline;
+      padding-top:10px;
+      margin-right:10px;
+      z-index:10;
+      margin-bottom: 4px
+    }
+
+    ul.ultoggle{
+      display: none
     }
   }
