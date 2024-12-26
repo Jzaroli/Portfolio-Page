@@ -7,7 +7,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '3vw'
+        marginTop: '3vw',
       },
     circle: {
         display: 'flex',
@@ -19,6 +19,7 @@ const styles = {
         overflowY: 'auto',
         overflowX: 'hidden',  
         padding: '1vw',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       },
     logo: {
         borderRadius: '50%', 

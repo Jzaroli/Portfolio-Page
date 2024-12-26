@@ -73,7 +73,8 @@ const styles = {
         padding: '1vw',
         overflow: 'auto',
         fontFamily: 'Roboto',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
       },
     img: {
         display: 'block',

@@ -1,4 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import Hamburger from './Hamburger.jsx'
 import logo from '../assets/images/jz-logo-simple.png';
 import '../assets/css/NavBar.css'
 
@@ -26,11 +28,16 @@ const styles = {
 
 function NavBar() {
     const currentPage = useLocation().pathname;
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen)
+    }
 
     return (
         <nav className='navbar navbar-expand-sm navbar-light'>
             <img style={styles.logo} src={logo} alt='JZ logo'></img>
-            <ul className='navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between'>
+            <ul className='ultoggle navbar-nav mb-2 mb-lg-0 ms-auto align-items-center justify-content-between'>
                 <li style={styles.nav} className='nav-item'>
                     <Link
                         to='/'
@@ -64,6 +71,9 @@ function NavBar() {
                     </Link>
                 </li>
             </ul>
+            <div className='hamburger' onClick={toggleHamburger}>
+                <Hamburger isOpen={hamburgerOpen} />
+            </div>
         </nav>
     );
 }
