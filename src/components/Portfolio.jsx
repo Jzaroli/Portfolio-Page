@@ -5,6 +5,7 @@ import markdown from '../assets/images/markdownGen.png';
 import employee from '../assets/images/employeeTracker.png';
 import mole from '../assets/images/mobileMole.png';
 import portfolio from '../assets/images/portfolio.png';
+import trading from '../assets/images/tradingview.png';
 import React, { useState } from 'react';
 import '../assets/css/Portfolio.css'
 
@@ -54,6 +55,16 @@ function Portfolio() {
     const handleMouseEnter8 = () => setIsHovered8(true);
     const handleMouseLeave8 = () => setIsHovered8(false);
 
+     // Manages state for Trading button:
+     const [isHovered9, setIsHovered9] = useState(false);
+     const handleMouseEnter9 = () => setIsHovered9(true);
+     const handleMouseLeave9 = () => setIsHovered9(false);
+
+     // Manages state for Trading Details:
+     const [isHovered10, setIsHovered10] = useState(false);
+     const handleMouseEnter10 = () => setIsHovered10(true);
+     const handleMouseLeave10 = () => setIsHovered10(false);
+
     const styles = {
         wrapper: {
             display: 'flex',
@@ -86,7 +97,7 @@ function Portfolio() {
         divFormat: {
             display: 'flex',
             flexDirection: 'row',
-            marginTop: '0.5vw'
+            marginTop: '0.5vw',
         },
         linkFormat: {
             fontSize: '2vw',
@@ -99,7 +110,7 @@ function Portfolio() {
         tooltipContainer: {
             position: 'relative', 
             display: 'inline-block',
-            textAlign: 'center'
+            textAlign: 'center',
         },
         tooltipCand: {
             position: 'absolute',
@@ -292,13 +303,53 @@ function Portfolio() {
             justifyContent: 'center',
             textAlign: 'center'
         },
+        tooltipTrading: {
+            position: 'absolute',
+            bottom: '90%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            fontFamily: 'Roboto',
+            backgroundColor: 'black',
+            color: 'white',
+            padding: '5px 10px',
+            borderRadius: '5px',
+            whiteSpace: 'nowrap',
+            fontSize: '1vw',
+            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.3)',
+            zIndex: 10,
+            visibility: isHovered9 ? 'visible' : 'hidden',
+            opacity: isHovered9 ? 0.9 : 0, 
+            transition: 'opacity 0.3s ease'
+        },
+        detailsTrading: {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
+            borderRadius: '2%', 
+            fontFamily: 'Roboto',
+            backgroundColor: 'black',
+            color: 'white',
+            fontSize: '1vw',
+            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.3)',
+            zIndex: 10,
+            pointerEvents: 'none',
+            display: isHovered10 ? 'flex' : 'none',
+            opacity: isHovered10 ? 0.9 : 0, 
+            transition: 'opacity 0.3s ease-in-out',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            textAlign: 'center'
+        },
         h2: {
             fontSize: '1.5vw'
         },
         p: {
             fontSize: '1.1vw',
             marginTop: '1vw',
-            fontStyle: 'italic'
+            fontStyle: 'italic',
         }
     }
 
@@ -306,6 +357,20 @@ function Portfolio() {
     return (
         <>
             <div style={styles.wrapper}>
+                <div style={styles.box} className='box bg-primary bg-opacity-25'>
+                    <div style={styles.detailsTrading}>
+                        <h2 style={styles.h2}>Research and save your favorite stocks!</h2>
+                        <p style={styles.p}>Stack: React.js, TypeScript, Bootstrap, Node/Express.js, PostgreSQL, Sequelize ORM, JWT for Auth, Chart.js, Alpaca API.</p>
+                    </div>
+                    <img style={styles.img} className='image' src={trading} onMouseEnter={handleMouseEnter10} onMouseLeave={handleMouseLeave10} alt='Trading App Logo'></img>
+                    <div style={styles.divFormat}>
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://github.com/Jzaroli/Trading-View_App' target='_blank' rel='noopener noreferrer'>Github</a> 
+                        <div style={styles.tooltipContainer}>
+                            <div style={styles.tooltipTrading}>Render needs 60s to boot up!</div>
+                            <a style={styles.linkFormat} onMouseEnter={handleMouseEnter9} onMouseLeave={handleMouseLeave9} className='btn btn-default btn-work btn-primary' href='https://trading-app-v63x.onrender.com/' target='_blank' rel='noopener noreferrer'>Link</a>
+                        </div>
+                    </div>
+                </div>
                 <div style={styles.box} className='box bg-primary bg-opacity-25'>
                     <div style={styles.detailsCand}>
                         <h2 style={styles.h2}>Tinder for finding engineers on GitHub!</h2>
