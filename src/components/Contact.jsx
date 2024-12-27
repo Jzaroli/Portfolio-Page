@@ -7,13 +7,13 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '3vw',
+        marginTop: '2rem',
       },
-    circle: {
+    box: {
         display: 'flex',
         alignItems: 'flex-start',
         flexDirection: 'row',
-        width: '75vw',
+        width: '85vw',
         height: 'auto', 
         borderRadius: '3%', 
         overflowY: 'auto',
@@ -36,16 +36,17 @@ const styles = {
         textAlign: 'left',
         overflow: 'visible',
     },
-    circle2: {
+    box2: {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'row',
-        width: '75vw',
+        width: '85vw',
         height: 'auto', 
         borderRadius: '3%', 
         overflowY: 'auto',
         overflowX: 'hidden',  
         padding: '1vw',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
       },
     div2: {
         display: 'flex',
@@ -55,7 +56,9 @@ const styles = {
         fontFamily: 'Roboto',
         boxSizing: 'border-box',
         overflow: 'visible',
-        position: 'relative'
+        position: 'relative',
+        width: '95%',
+        borderRadius: '3%', 
     },
     formDiv: {
         display: 'flex',
@@ -65,21 +68,28 @@ const styles = {
     formInputs: {
         marginTop: '1vw',
         fontFamily: 'Roboto',
+        fontSize: '2vw',
+
     },
     textArea: {
         marginTop: '1vw',
         fontFamily: 'Roboto',
-        width: '54vw'
+        width: '54vw',
+        fontSize: '2vw',
+
     },
     button: {
-        fontSize: '1.8vw',
         textAlign: 'center',
-        margin: '1vw',
+        margin: '1.5vw',
         color: 'white',
         textDecoration: 'none',
         fontFamily: 'Roboto',
+        fontSize: '2vw'
+    },
+    h2: {
+        fontSize: '4vw',
+        padding: '1vw'
     }
-    
 }
 
 function ContactForm() {
@@ -112,12 +122,12 @@ function ContactForm() {
     if (state.succeeded) {
         return  <>
         <div style={styles.wrapper}>
-            <div style={styles.circle2} className='bg-primary bg-opacity-25' >
+            <div style={styles.box2} className='bg-primary bg-opacity-25' >
                 <div>
                     <img style={styles.logo} src={logo} alt='logo'></img>
                 </div>
                 <div style={styles.div2}>
-                    <h2 style={styles.h2}>Thanks for reaching out! I'll be in touch soon.</h2> 
+                    <h2 style={styles.h2}>Thanks for reaching out!<br></br> I'll be in touch soon.</h2> 
                 </div>
             </div>
         </div>  
@@ -126,7 +136,7 @@ function ContactForm() {
     return (
         <>
             <div style={styles.wrapper}>
-                <div style={styles.circle} className='bg-primary bg-opacity-25' >
+                <div style={styles.box} className='bg-primary bg-opacity-25' >
                     <div>
                         <img style={styles.logo} src={logo} alt='logo'></img>
                     </div>
@@ -171,7 +181,6 @@ function ContactForm() {
                                     onBlur={handleInputBlur} 
                                 />
                                 {formErrors.message && <p style={{ color: 'red', marginLeft: '0.3vw' }}>{formErrors.message}</p>}
-
                                 <button style={styles.button} className='btn btn-default btn-work btn-primary' type='submit'>Submit</button>
                             </div>
                         </form>

@@ -1,0 +1,21 @@
+div.box{
+    width: 44vw;
+    height: 29vw
+  }
+
+img.image{
+    width: 18vw;
+    height: 18vw
+}
+
+  @media (max-width: 575px) {
+    div.box{
+        width: 85vw;
+        height: 58vw
+      }
+    
+    img.image{
+    width: 36vw;
+    height: 36vw
+    }
+}
