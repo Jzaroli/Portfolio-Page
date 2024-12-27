@@ -3,18 +3,18 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-start',
+        marginTop: '2rem'
       },
     box: {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        width: '75vw',
+        width: '85vw',
         height: 'auto', 
         borderRadius: '2%', 
-        margin: '1.5vw',
         overflow: 'auto',
-        padding: '1vw',
+        padding: '2vw',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       },
     h2: {
@@ -40,12 +40,12 @@ const styles = {
         display: 'inline-flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: '1.6vw',
+        fontSize: '2vw',
         textAlign: 'center',
         color: 'white',
         textDecoration: 'none',
         fontFamily: 'Roboto',
-        marginLeft: '0.7vw',
+        marginLeft: '1vw',
     }
 }
 
@@ -80,7 +80,7 @@ function Resume() {
                             <br></br>
                         <div style={styles.resume}>
                             <h2 style= {styles.h2}>Experience: </h2>
-                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1CMeL8Qo6deZxxPlmHkopNikLwJ9KS2Hn/view' target='_blank' rel='noopener noreferrer'>Resume</a> 
+                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1JOvSeKnHG1j2CK2V9CmcQjVGKWjCjv2Z/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a> 
                         </div>
                     </div>
                 </div>
