@@ -10,8 +10,8 @@ const styles = {
         alignItems: 'flex-start',    
         margin: '0.3rem',
         textAlign: 'center',
-        fontSize: '5vh',
-        maxHeight: '8vw'
+        fontSize: '1.7rem',
+        maxHeight: '2.5rem'
     },
     ul: {
         display: 'flex',
@@ -19,7 +19,7 @@ const styles = {
         flexDirection: 'row',
     },
     logo: {
-         height: '9vh',
+         height: '3rem',
          textAlign: 'center',
          margin: '0.3rem',
          marginLeft: '0.5rem'
