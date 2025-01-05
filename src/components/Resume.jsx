@@ -56,7 +56,7 @@ function Resume() {
                 <div style={styles.box} className='bg-primary bg-opacity-25'>
                     <div style={styles.sections}> 
                         <h2 style= {styles.h2}>Skills</h2> 
-                            <b>Back End Development</b> | Express 𑇐 Node.js 𑇐 Python 𑇐 PostgreSQL <br></br>
+                            <b>Back End Development</b> | Express 𑇐 Node.js 𑇐 Python 𑇐 PostgreSQL 𑇐 NoSQL 𑇐 MongoDB<br></br>
                             <b>Front End Development</b> | ReactJS 𑇐 JavaScript 𑇐 BootStrap 𑇐 HTML 𑇐 CSS <br></br>
                             <b>Miscellaneous Technical</b> | Typescript 𑇐 Prompt Engineering <br></br>
                             <b>Mathematics</b> | Statistics 𑇐 Calculus <br></br>
@@ -80,7 +80,7 @@ function Resume() {
                             <br></br>
                         <div style={styles.resume}>
                             <h2 style= {styles.h2}>Experience: </h2>
-                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1JOvSeKnHG1j2CK2V9CmcQjVGKWjCjv2Z/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a> 
+                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1thBaLeFvRCo9pEi8y9JJP6Ek51CzfntE/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a> 
                         </div>
                     </div>
                 </div>
