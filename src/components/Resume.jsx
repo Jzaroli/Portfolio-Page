@@ -80,7 +80,7 @@ function Resume() {
                             <br></br>
                         <div style={styles.resume}>
                             <h2 style= {styles.h2}>Experience: </h2>
-                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1thBaLeFvRCo9pEi8y9JJP6Ek51CzfntE/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a> 
+                            <a style={styles.button} className='btn btn-primary' href='https://drive.google.com/file/d/1U6PnqGuVg-Bh6F9bp-gm91OBa5Otv1IU/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>Resume</a> 
                         </div>
                     </div>
                 </div>
