@@ -79,7 +79,7 @@ function About() {
                         <h1 style={styles.h1}>Johann Zaroli</h1>
                         <h2 style={styles.h2}>Software Developer</h2>
                         <p style={styles.paragraph}>
-                        As a software developer, I specialize in delivering full-stack solutions that combine intuitive design, business process expertise, and high performance. Drawing from my STEM background, I approach algorithmic challenges with logical and programmatic thinking. My fintech experience helps me empathize with customer needs, plan for costs and scalability, and adapt to evolving markets and technologies. Having worked at both unicorn start-ups and leading software firms, I’ve learned the value of clear communication, the power of collaboration, and the joy of mentorship. Feel free to explore my portfolio and resume, and reach out through the contact section if you'd like to work together. Thank you for stopping by!
+                        As a software developer, I specialize in delivering web apps that combine intuitive design, business process expertise, and high performance. Drawing from my STEM background, I approach algorithmic challenges with logical and programmatic thinking. My fintech experience helps me empathize with customer needs, plan for costs and scalability, and adapt to evolving markets and technologies. Having worked at both unicorn start-ups and leading software firms, I’ve learned the value of clear communication, the power of collaboration, and the joy of mentorship. Feel free to explore my portfolio and resume, and reach out through the contact section if you'd like to work together. Thank you for stopping by!
                         </p>
                     </div>
                 </div>
