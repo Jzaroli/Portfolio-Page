@@ -9,6 +9,7 @@ const styles = {
     nav: {
         alignItems: 'flex-start',    
         margin: '0.3rem',
+        paddingBottom: '3rem',
         textAlign: 'center',
         fontSize: '1.7rem',
         maxHeight: '2.5rem'

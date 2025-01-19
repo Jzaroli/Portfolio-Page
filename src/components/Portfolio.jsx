@@ -6,8 +6,10 @@ import employee from '../assets/images/employeeTracker.png';
 import mole from '../assets/images/mobileMole.png';
 import portfolio from '../assets/images/portfolio.png';
 import trading from '../assets/images/tradingview.png';
+import tictactoe from '../assets/images/tictactoe.png';
+import socialmedia from '../assets/images/socialmediaAPI.png';
 import React, { useState } from 'react';
-import '../assets/css/Portfolio.css'
+import '../assets/css/Portfolio.css';
 
 function Portfolio() {
     // Manages state for Candidate button:
@@ -64,6 +66,16 @@ function Portfolio() {
      const [isHovered10, setIsHovered10] = useState(false);
      const handleMouseEnter10 = () => setIsHovered10(true);
      const handleMouseLeave10 = () => setIsHovered10(false);
+
+     // Manages state for Tic Tac Toe Details:
+     const [isHovered11, setIsHovered11] = useState(false);
+     const handleMouseEnter11 = () => setIsHovered11(true);
+     const handleMouseLeave11 = () => setIsHovered11(false);
+
+    // Manages state for Social Media Details:
+    const [isHovered12, setIsHovered12] = useState(false);
+    const handleMouseEnter12 = () => setIsHovered12(true);
+    const handleMouseLeave12 = () => setIsHovered12(false);
 
     const styles = {
         wrapper: {
@@ -343,6 +355,50 @@ function Portfolio() {
             justifyContent: 'center',
             textAlign: 'center'
         },
+        detailsTic: {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
+            borderRadius: '2%', 
+            fontFamily: 'Roboto',
+            backgroundColor: 'black',
+            color: 'white',
+            fontSize: '1vw',
+            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.3)',
+            zIndex: 10,
+            pointerEvents: 'none',
+            display: isHovered11 ? 'flex' : 'none',
+            opacity: isHovered11 ? 0.9 : 0, 
+            transition: 'opacity 0.3s ease-in-out',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            textAlign: 'center'
+        },
+        detailsSocial: {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
+            borderRadius: '2%', 
+            fontFamily: 'Roboto',
+            backgroundColor: 'black',
+            color: 'white',
+            fontSize: '1vw',
+            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.3)',
+            zIndex: 10,
+            pointerEvents: 'none',
+            display: isHovered12 ? 'flex' : 'none',
+            opacity: isHovered12 ? 0.9 : 0, 
+            transition: 'opacity 0.3s ease-in-out',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            textAlign: 'center'
+        },
         h2: {
             fontSize: '1.5vw'
         },
@@ -386,6 +442,17 @@ function Portfolio() {
                     </div>
                 </div>
                 <div style={styles.box} className='box bg-primary bg-opacity-25'>
+                    <div style={styles.detailsTic}>
+                        <h2 style={styles.h2}>Choose single or two players for a classic game of Tic Tac Toe!</h2>
+                        <p style={styles.p}>Stack: Typescript, React.js, Tailwind.</p>
+                    </div>
+                    <img style={styles.img} className='image' onMouseEnter={handleMouseEnter11} onMouseLeave={handleMouseLeave11} src={tictactoe} alt='Tic Tac Toe Game Logo'></img>
+                    <div style={styles.divFormat}>
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://github.com/Jzaroli/Tic-Tac-Toe' target='_blank' rel='noopener noreferrer'>Github</a> 
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://johann-zaroli-tictactoe.netlify.app/' target='_blank' rel='noopener noreferrer'>Play</a>
+                    </div>
+                </div>
+                <div style={styles.box} className='box bg-primary bg-opacity-25'>
                     <div style={styles.detailsEmp}>
                         <h2 style={styles.h2}>An HR app for small businesses!</h2>
                         <p style={styles.p}>Stack: Node.js, PostgreSQL and TypeScript.</p>
@@ -418,6 +485,18 @@ function Portfolio() {
                     <img style={styles.img} className='image' onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5} src={mole} alt='Wackamole Game Logo'></img>
                     <div style={styles.divFormat}>
                         <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://github.com/Jzaroli/Wackamole-2.0_JS-Game' target='_blank' rel='noopener noreferrer'>Github</a> 
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://jzaroli.github.io/Wackamole-2.0_JS-Game/' target='_blank' rel='noopener noreferrer'>Play</a>
+                    </div>
+                </div>
+                <div style={styles.box} className='box bg-primary bg-opacity-25'>
+                    <div style={styles.detailsSocial}>
+                        <h2 style={styles.h2}>NoSQL CRUD operations for a social media platform!</h2>
+                        <p style={styles.p}>Stack: Node.js and NoSQL</p>
+                    </div>
+                    <img style={styles.img} className='image' onMouseEnter={handleMouseEnter12} onMouseLeave={handleMouseLeave12} src={socialmedia} alt='Social Media API Logo'></img>
+                    <div style={styles.divFormat}>
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://github.com/Jzaroli/Social-Media-API' target='_blank' rel='noopener noreferrer'>Github</a> 
+                        <a style={styles.linkFormat} className='btn btn-default btn-work btn-primary' href='https://drive.google.com/file/d/1AqwIJ5E81uvr3wj6NtMLsVDvQUYKs41J/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Demo</a>
                     </div>
                 </div>
                 <div style={styles.box} className='box bg-primary bg-opacity-25'>
