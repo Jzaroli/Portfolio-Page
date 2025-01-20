@@ -491,7 +491,7 @@ function Portfolio() {
                 <div style={styles.box} className='box bg-primary bg-opacity-25'>
                     <div style={styles.detailsSocial}>
                         <h2 style={styles.h2}>NoSQL CRUD operations for a social media platform!</h2>
-                        <p style={styles.p}>Stack: Node.js and NoSQL</p>
+                        <p style={styles.p}>Stack: Node.js, NoSQL and MongoDB</p>
                     </div>
                     <img style={styles.img} className='image' onMouseEnter={handleMouseEnter12} onMouseLeave={handleMouseLeave12} src={socialmedia} alt='Social Media API Logo'></img>
                     <div style={styles.divFormat}>
