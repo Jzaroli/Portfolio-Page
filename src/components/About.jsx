@@ -85,7 +85,7 @@ function About() {
                         <p style={styles.paragraph1}>
                             I deliver full-stack solutions that combine intuitive design, business process expertise, and high performance. Drawing from my STEM background, I approach algorithmic challenges with logical and programmatic thinking. My fintech experience helps me empathize with customer needs, plan for costs and scalability, and adapt to evolving markets and technologies. Having worked at both unicorn start-ups and leading software firms, I’ve learned the value of clear communication, the power of collaboration and the joy of mentorship.                         </p>
                         <p style={styles.paragraph2}>
-                            I’m ramping into software development incredibly fast, delivering high quality work with all of the technologies listed below. There is also much I can offer from my GTM background in tech to a warm and collaborative personality that has the team, the product and the company’s best interest in mind. Feel free to explore my portfolio and resume! Thanks for taking the time!
+                            I’m ramping into software development incredibly fast, delivering high quality work with all of the technologies listed here. There is also much I can offer from my GTM background in tech to a warm and collaborative personality that has the team, the product and the company’s best interest in mind. Feel free to explore my portfolio and resume! Thanks for taking the time!
                         </p>
                     </div>
                 </div>
