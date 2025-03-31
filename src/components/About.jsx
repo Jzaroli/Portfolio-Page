@@ -83,7 +83,8 @@ function About() {
                         <h1 style={styles.h1}>Johann Zaroli</h1>
                         <h2 style={styles.h2}>Full Stack Web Developer</h2>
                         <p style={styles.paragraph1}>
-                            Full-stack web developer focused on intuitive design, business process support, high performance and security. Experienced in early stage startups, product-market fit and fundraising. I approach problem solving with business & technical rigor as well as creativity. The current times call for software developers to have technical expertise and to also have the business and people skills necessary to drive product development cross-functionally. Combining my experiences to support development teams is my passion!
+                            Full-stack web developer focused on intuitive design, business process support, high performance and security. Experienced in early stage startups, product-market fit and fundraising. I approach problem solving with business and technical rigor as well as creativity. Combining my experiences to support engineering teams is my passion!
+                        </p>
                         <p style={styles.paragraph2}>
                             Feel free to explore my portfolio and resume! Thank you for taking the time.
                         </p>
